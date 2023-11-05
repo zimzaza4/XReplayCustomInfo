@@ -62,7 +62,6 @@ public class ComponentListener extends PacketAdapter {
             if (components == null || components.length == 0) {
                 StructureModifier<WrappedChatComponent> componentModifier = event.getPacket().getChatComponents();
                 components =  ComponentConverter.fromWrapper(componentModifier.read(0));
-                System.out.println("act 3");
             }
 
             if (components == null || components.length == 0) {
@@ -78,7 +77,6 @@ public class ComponentListener extends PacketAdapter {
             fullMsg = baseComponent.toLegacyText();
         }
         String[] values = ANY_COLOR_PATTERN.matcher(fullMsg).replaceAll("").split(XReplayCustomInfo.getInstance().getSplit());
-        System.out.println("ACTV:" + Arrays.toString(values));
         if (values.length == 0) {
             return;
         }
