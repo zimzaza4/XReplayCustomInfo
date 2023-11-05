@@ -1,0 +1,3 @@
+info: " Ping: %player_ping% TPS: %server_tps%" # use PAPI
+record-period: 10 # 10 tick
+split-by: "," # to get player name, i have to read original actionbar and split the player name

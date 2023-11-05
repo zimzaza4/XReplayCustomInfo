@@ -1,0 +1,6 @@
+name: XReplayCustomInfo
+version: '${project.version}'
+main: re.imc.xreplaycustominfo.XReplayCustomInfo
+depend:
+  - ProtocolLib
+  - XReplayExtendAPI
